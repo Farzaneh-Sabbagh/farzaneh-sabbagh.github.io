@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farzaneh Sabbagh</title>
+<meta name="description" content="Farzaneh Sabbagh is a Ph.D. candidate in economics at the University of New Hampshire, on the 2026–27 job market. Environmental economics and local public finance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Archivo:wght@500;600&display=swap">
+<style>
+:root{
+  --paper:#FCFCFA; --tint:#F4F6F9; --ink:#232830; --meta:#5B636E;
+  --navy:#1F3A5F; --link:#2C5486; --hair:#A9B4C4; --hair-soft:#D6DDE6;
+  --btn-bg:#1F3A5F; --btn-ink:#FCFCFA; --btn-bg-hover:#2C5486;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#151920; --tint:#1B212B; --ink:#DCE1E8; --meta:#98A2B0;
+    --navy:#9FBEE3; --link:#9FBEE3; --hair:#3C475A; --hair-soft:#2A3341;
+    --btn-bg:#9FBEE3; --btn-ink:#151920; --btn-bg-hover:#B9D2EE;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#151920; --tint:#1B212B; --ink:#DCE1E8; --meta:#98A2B0;
+  --navy:#9FBEE3; --link:#9FBEE3; --hair:#3C475A; --hair-soft:#2A3341;
+  --btn-bg:#9FBEE3; --btn-ink:#151920; --btn-bg-hover:#B9D2EE;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size:17px; line-height:1.65;
+}
+a{color:var(--link); text-decoration:none; border-bottom:1px solid var(--hair-soft)}
+a:hover{border-bottom-color:var(--link)}
+a:focus-visible{outline:2px solid var(--link); outline-offset:2px; border-radius:2px}
+.wrap{max-width:780px; margin:0 auto; padding:0 22px}
+
+/* ---------- Nav ---------- */
+nav{
+  border-bottom:1px solid var(--hair-soft); background:var(--paper);
+  position:sticky; top:0; z-index:5;
+}
+nav .wrap{display:flex; gap:26px; align-items:baseline; padding-top:14px; padding-bottom:13px; flex-wrap:wrap}
+nav a{
+  font-family:Archivo, Arial, sans-serif; font-size:12px; font-weight:600;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--meta); border-bottom:none;
+}
+nav a:hover{color:var(--navy)}
+nav .home{color:var(--navy); margin-right:auto; letter-spacing:.18em}
+
+/* ---------- Header ---------- */
+header .wrap{
+  display:flex; gap:40px; align-items:center; justify-content:space-between;
+  padding-top:56px; padding-bottom:44px;
+}
+.masthead h1{
+  font-family:Spectral, Georgia, serif; font-weight:600; color:var(--navy);
+  font-size:clamp(30px, 5vw, 42px); letter-spacing:.04em; margin:0 0 10px; line-height:1.15;
+  text-wrap:balance;
+}
+.masthead .role{margin:0 0 6px; font-size:18px}
+.masthead .market{
+  margin:14px 0 0; font-family:Archivo, Arial, sans-serif; font-size:12.5px; font-weight:600;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--meta);
+}
+.masthead .market strong{color:var(--navy); font-weight:600}
+.portrait{flex:0 0 168px}
+.portrait img{
+  width:168px; height:168px; object-fit:cover; object-position:center;
+  border-radius:50%; border:3px solid var(--hair-soft); display:block;
+}
+@media (max-width:640px){
+  header .wrap{flex-direction:column-reverse; align-items:flex-start; gap:24px; padding-top:36px}
+  .portrait{flex-basis:auto}
+  .portrait img{width:132px; height:132px}
+}
+
+/* ---------- Sections ---------- */
+section{padding:34px 0 10px}
+section.tinted{background:var(--tint); padding:38px 0 30px; margin-top:26px}
+h2{
+  font-family:Archivo, Arial, sans-serif; font-size:14px; font-weight:600;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--navy);
+  margin:0 0 6px; padding-bottom:8px; border-bottom:1px solid var(--hair);
+}
+h3{
+  font-family:Spectral, Georgia, serif; font-weight:600; font-size:20px;
+  color:var(--ink); margin:26px 0 4px; line-height:1.35; text-wrap:balance;
+}
+.meta{color:var(--meta); font-size:15px; margin:0 0 10px}
+.meta em{font-style:italic}
+p{margin:0 0 14px; max-width:70ch}
+section p:not(.meta):not(.note), .abstract{text-align:justify; text-justify:inter-word; hyphens:auto; -webkit-hyphens:auto}
+.ref p, #contact > .wrap > p{text-align:left; hyphens:manual}
+.abstract{font-size:16px; color:var(--ink)}
+.note{font-size:15px; color:var(--meta); font-style:italic}
+
+/* ---------- Lists ---------- */
+ul.plain{list-style:none; padding:0; margin:0 0 14px}
+ul.plain li{padding:7px 0; border-bottom:1px solid var(--hair-soft); max-width:70ch}
+ul.plain li:last-child{border-bottom:none}
+.year{
+  font-family:Archivo, Arial, sans-serif; font-size:12px; font-weight:600;
+  letter-spacing:.08em; color:var(--meta); white-space:nowrap; float:right; margin-left:16px;
+}
+
+/* ---------- Downloads ---------- */
+.downloads{display:flex; flex-wrap:wrap; gap:12px; margin:18px 0 24px}
+.btn{
+  font-family:Archivo, Arial, sans-serif; font-size:13px; font-weight:600;
+  letter-spacing:.06em; padding:10px 18px; border-radius:3px;
+  background:var(--btn-bg); color:var(--btn-ink); border-bottom:none;
+}
+.btn:hover{background:var(--btn-bg-hover)}
+.btn.ghost{
+  background:transparent; color:var(--navy);
+  box-shadow:inset 0 0 0 1.5px var(--hair);
+}
+.btn.ghost:hover{box-shadow:inset 0 0 0 1.5px var(--navy); background:transparent}
+
+/* ---------- References / contact ---------- */
+.refs{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:18px; margin:16px 0 8px}
+.ref .name{font-weight:600; margin:0}
+.ref p{margin:0; font-size:15px; color:var(--meta)}
+.ref a{font-size:15px}
+
+footer{border-top:1px solid var(--hair-soft); margin-top:44px}
+footer .wrap{padding-top:20px; padding-bottom:36px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
+footer p{font-size:14px; color:var(--meta); margin:0}
+@media print{nav{position:static}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="home">Farzaneh Sabbagh</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="wrap">
+    <div class="masthead">
+      <h1>Farzaneh Sabbagh</h1>
+      <p class="role">Ph.D. Candidate in Economics, University of New Hampshire</p>
+      <p class="role" style="color:var(--meta); font-size:16px">Environmental economics &middot; Local public finance &middot; Applied econometrics</p>
+      <p class="market"><strong>On the 2026&ndash;27 job market</strong> &middot; defending May 2027</p>
+    </div>
+    <div class="portrait">
+      <img src="files/headshot.jpg" alt="Portrait of Farzaneh Sabbagh"
+           onerror="this.outerHTML='&lt;div style=&quot;width:168px;height:168px;border-radius:50%;border:3px solid var(--hair-soft);display:flex;align-items:center;justify-content:center;font-family:Spectral,Georgia,serif;font-size:48px;color:var(--hair);background:var(--tint)&quot;&gt;FS&lt;/div&gt;'">
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p style="margin-top:14px">I am a Ph.D. candidate in economics at the University of New Hampshire. I study how environmental quality and community composition shape the value people place on public goods: my dissertation asks what cleaner water in Lake Erie is worth to the people who swim and fish in it, and why some communities vote to invest in their schools while others do not. I expect to defend my dissertation in May 2027.</p>
+    <p>Before UNH, I earned an M.Sc. in Quantitative Economics at Bielefeld University in Germany, and a B.Sc. in Economics at the University of Tehran. I work in R, Stata, Python, and MATLAB, with ArcGIS and QGIS for spatial work, and I speak English, Farsi, and German.</p>
+    <p>I have also worked outside the university. As a sustainability intern at ProAmpac, a global packaging manufacturer, I analyzed energy and emissions data across its operations and presented reduction strategies to corporate leadership. At UNH&rsquo;s Center for Business Analytics, I designed surveys and delivered analytics for client-facing projects.</p>
+  </div>
+</section>
+
+<section id="research" class="tinted">
+  <div class="wrap">
+    <h2>Research</h2>
+
+    <h3>Publication</h3>
+    <p class="abstract" style="margin-bottom:8px; text-align:left">Mohr, R., &amp; Sabbagh, F. (2026). National priorities list. In D. E. Taylor (Ed.), <em>The Sage Encyclopedia of Environmental Justice</em> (Vol. 3, pp. 875&ndash;880). SAGE Publications. <a href="https://doi.org/10.4135/9781071908006.n265" rel="noopener">doi.org/10.4135/9781071908006.n265</a></p>
+    <p class="abstract">This entry reviews the National Priorities List (NPL), the roster of the most hazardous waste sites in the United States designated for long-term cleanup under the Superfund program. We describe how sites are listed and remediated, synthesize the evidence on the racial and socioeconomic disparities linked to site location and cleanup duration, and review what is known about the health, property-value, and gentrification effects of remediation on nearby communities.</p>
+
+    <h3>Job Market Paper</h3>
+    <p class="meta">&ldquo;Are Nutrient Policy Impacts on Recreation in Lake Erie as Murky as the Water?&rdquo; (with S.&nbsp;Brockmann) &middot; <em>supported by an external research grant from the Great Lakes Fishery Commission, 2023&ndash;2026</em></p>
+    <p class="abstract">Harmful algal blooms have re-emerged as the central management challenge on Lake Erie, prompting the United States and Canada to commit to a 40% cut in the phosphorus loading that feeds them. Cleaner water is usually assumed to be an unambiguous gain, but the lake serves two very different groups of recreational users: beachgoers, whose visits depend on water conditions, and anglers, whose visits depend on the fishery that those same nutrients help sustain. To measure how each group values the policy, I designed and administered two contingent-behavior surveys that record respondents’ actual trips to the lake alongside the trips they say they would take under hypothetical scenarios varying bloom severity, water safety, and fish populations. Using the travel cost method, I estimate negative binomial recreation demand models in which each respondent&rsquo;s actual and hypothetical trips are pooled in a single estimation, so that real behavior anchors the models while the hypothetical scenarios identify responses to conditions the lake has not yet experienced. I then link these demand functions to simulations from a calibrated ecosystem model of the lake; to my knowledge, no earlier study connects the two. Beachgoers respond to bloom severity with a threshold: moderate and severe blooms deter visits almost equally, so beach-trip gains are modest under the 40% target and grow sharply only under deeper reductions that restore mild conditions. Anglers, by contrast, respond to fish abundance and water safety rather than bloom size. The paper quantifies the lake&rsquo;s documented water quality–fisheries tradeoff in economic terms, delivering the distributional evidence regulators need to compare nutrient targets on a common welfare footing.</p>
+    <p class="note">Draft and survey instruments available on request.</p>
+    <p class="meta" style="margin-top:14px; margin-bottom:4px"><strong>Presentations:</strong></p>
+    <ul class="plain">
+      <li><span class="year">Nov 2025</span>Southern Economic Association Annual Meeting, Tampa, FL</li>
+      <li><span class="year">Feb 2025</span>Eastern Economic Association Annual Conference, New York, NY</li>
+      <li><span class="year">Jan 2025</span>ASSA Annual Meeting, San Francisco, CA</li>
+    </ul>
+
+    <h3>Working Paper</h3>
+    <p class="meta">&ldquo;How Racial Composition Shapes Local Investment in Education: Voter&ndash;Student Demographic Mismatch and School Bond Elections in Texas&rdquo; (with Robert Mohr and Karen Conway)</p>
+    <p class="abstract">School bonds are the primary way American communities finance long-term educational investments, yet they are decided in elections by adult voters whose racial and ethnic composition differs from that of the K–12 students the funds are intended to serve. This paper asks whether that mismatch affects bond passage. We develop a model of voting behavior in which a voter&rsquo;s decision is influenced by both their own race or ethnicity and the racial and ethnic composition of the district&rsquo;s student population. The model yields a measure of racial fragmentation, the Hybrid Fragmentation Index (HFI) of Kurtz et al. (2024), which is highest when the voting-age population is least representative of the student population. We construct a district-year panel of Texas school bond elections that links each district&rsquo;s voting-age population to its enrolled students. In models with district and year fixed effects, greater voter–student mismatch, as measured by the HFI, significantly reduces the probability of bond passage. We also uncover a reversal overlooked in earlier studies: the effect of a district&rsquo;s over-65 population on bond passage is negative early in the sample but becomes significantly more positive over time, suggesting that racial and ethnic mismatch, rather than age itself, may be a key barrier to educational investment.</p>
+    <p class="meta" style="margin-top:14px; margin-bottom:4px"><strong>Presentation:</strong></p>
+    <ul class="plain">
+      <li><span class="year">Nov 2026</span>Southern Economic Association Annual Meeting, Houston, TX <span class="note">(scheduled)</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="wrap">
+    <h2>Teaching</h2>
+    <p style="margin-top:14px">This fall I am the instructor of record for Principles of Microeconomics (ECON 402), a class of 75 students for which I designed the syllabus, lectures, assignments, and exams. As a teaching assistant at UNH, I have led the undergraduate econometrics labs for Introduction to Econometrics and Advanced Econometrics, the doctoral labs for Econometrics I (ECON 926) and Microeconomics II, and review sessions for Principles and Intermediate Microeconomics; I have been a guest lecturer in a new course on AI Prompt Engineering for Economics; and I have graded and given written feedback on analytical projects for Industrial Economics and Business Innovation, Innovation in the Global Economy, and International Economics.</p>
+    <p>In my most recent evaluated course, the Fall 2024 graduate Econometrics I lab, every student who responded rated both the course and my teaching &ldquo;Recommend Strongly.&rdquo; In 2025 I received UNH&rsquo;s Summer Teaching Assistant Fellowship, awarded competitively on academic performance, teaching service, and faculty recommendations.</p>
+    <p class="note">Prepared to teach: principles and intermediate microeconomics, econometrics (R or Stata), environmental and natural resource economics, public economics, cost-benefit analysis and non-market valuation, data analytics, and undergraduate international economics.</p>
+  </div>
+</section>
+
+<section id="cv" class="tinted">
+  <div class="wrap">
+    <h2>Curriculum Vitae &amp; Documents</h2>
+    <div class="downloads" style="margin-top:16px">
+      <a class="btn" href="files/Sabbagh_CV_Academic.pdf">Download CV (PDF)</a>
+      <!-- Research and teaching statements: add these two buttons back when the final PDFs are in files/
+      <a class="btn ghost" href="files/Sabbagh_Research_Statement.pdf">Research Statement</a>
+      <a class="btn ghost" href="files/Sabbagh_Teaching_Statement.pdf">Teaching Statement</a>
+      -->
+    </div>
+    <p class="note" style="margin-bottom:24px">Job market paper draft, research and teaching statements, and survey instruments available on request.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact &amp; References</h2>
+    <p style="margin-top:14px">Department of Economics, University of New Hampshire, 10 Garrison Avenue, Durham, NH 03824<br>
+    <a href="mailto:farzaneh.sabbaghziarani@unh.edu">farzaneh.sabbaghziarani@unh.edu</a> &middot; <a href="https://www.linkedin.com/in/farzaneh-sabbagh-9996306b/" rel="noopener">LinkedIn</a></p>
+    <div class="refs">
+      <div class="ref">
+        <p class="name">Robert Mohr</p>
+        <p>Professor of Economics, UNH<br>dissertation co-chair</p>
+        <a href="mailto:Robert.Mohr@unh.edu">Robert.Mohr@unh.edu</a>
+      </div>
+      <div class="ref">
+        <p class="name">Stephanie Brockmann</p>
+        <p>Assistant Professor and Rhodes Chair of International Business, Baker University<br>dissertation co-chair</p>
+        <a href="mailto:stephanie.brockmann@bakeru.edu">stephanie.brockmann@bakeru.edu</a>
+      </div>
+      <div class="ref">
+        <p class="name">Karen Conway</p>
+        <p>Professor of Economics, UNH<br>committee member</p>
+        <a href="mailto:Karen.Conway@unh.edu">Karen.Conway@unh.edu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Farzaneh Sabbagh &middot; University of New Hampshire</p>
+    <p>Last updated September 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
